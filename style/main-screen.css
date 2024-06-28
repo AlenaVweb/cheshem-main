@@ -166,7 +166,7 @@ body::before {
 
 @keyframes space-link-hover {
     to {
-        background-image: url(../assets/space-bg.svg);
+        background-image: url(../assets/space-bg.gif);
     }
 }
 
@@ -180,7 +180,7 @@ body::before {
 
 @keyframes events-link-hover {
     to {
-        background-image: url(../assets/events-bg.svg);
+        background-image: url(../assets/events-bg.gif);
     }
 }
 
@@ -195,7 +195,7 @@ body::before {
 
 @keyframes hypnosis-link-hover {
     to {
-        background-image: url(../assets/hypnosis-bg.svg);
+        background-image: url(../assets/hypnosis-bg.gif);
     }
 }
 
@@ -209,7 +209,7 @@ body::before {
 
 @keyframes riddle-link-hover {
     to {
-        background-image: url(../assets/riddle-bg.svg);
+        background-image: url(../assets/riddle-bg.gif);
     }
 }
 
@@ -223,7 +223,7 @@ body::before {
 
 @keyframes shop-link-hover {
     to {
-        background-image: url(../assets/shop-bg.svg);
+        background-image: url(../assets/shop-bg.gif);
     }
 }
 
