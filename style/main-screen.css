@@ -18,11 +18,11 @@ body::before {
     height: 0;
     overflow: hidden;
 
-    content: url(../../assets/space-bg.svg)
-             url(../../assets/events-bg.svg)
-             url(../../assets/riddle-bg.svg)
-             url(../../assets/hypnosis-bg.svg)
-             url(../../assets/shop-bg.svg);
+    content: url(../assets/space-bg.svg)
+             url(../assets/events-bg.svg)
+             url(../assets/riddle-bg.svg)
+             url(../assets/hypnosis-bg.svg)
+             url(../assets/shop-bg.svg);
 }
 
 .bg-red {
@@ -161,12 +161,12 @@ body::before {
 }
 
 #space .block-link {
-    background-image: url(../../assets/space-bg-dimmed.svg);
+    background-image: url(../assets/space-bg-dimmed.svg);
 }
 
 @keyframes space-link-hover {
     to {
-        background-image: url(../../assets/space-bg.svg);
+        background-image: url(../assets/space-bg.svg);
     }
 }
 
@@ -175,12 +175,12 @@ body::before {
 }
 
 #events .block-link {
-    background-image: url(../../assets/events-bg-dimmed.svg);
+    background-image: url(../assets/events-bg-dimmed.svg);
 }
 
 @keyframes events-link-hover {
     to {
-        background-image: url(../../assets/events-bg.svg);
+        background-image: url(../assets/events-bg.svg);
     }
 }
 
@@ -189,13 +189,13 @@ body::before {
 }
 
 #hypnosis .block-link {
-    background-image: url(../../assets/hypnosis-bg-dimmed.svg);
+    background-image: url(../assets/hypnosis-bg-dimmed.svg);
     background-color: #fff;
 }
 
 @keyframes hypnosis-link-hover {
     to {
-        background-image: url(../../assets/hypnosis-bg.svg);
+        background-image: url(../assets/hypnosis-bg.svg);
     }
 }
 
@@ -204,12 +204,12 @@ body::before {
 }
 
 #riddle .block-link {
-    background-image: url(../../assets/riddle-bg-dimmed.svg);
+    background-image: url(../assets/riddle-bg-dimmed.svg);
 }
 
 @keyframes riddle-link-hover {
     to {
-        background-image: url(../../assets/riddle-bg.svg);
+        background-image: url(../assets/riddle-bg.svg);
     }
 }
 
@@ -218,12 +218,12 @@ body::before {
 }
 
 #shop .block-link {
-    background-image: url(../../assets/shop-bg-dimmed.svg);
+    background-image: url(../assets/shop-bg-dimmed.svg);
 }
 
 @keyframes shop-link-hover {
     to {
-        background-image: url(../../assets/shop-bg.svg);
+        background-image: url(../assets/shop-bg.svg);
     }
 }
 
