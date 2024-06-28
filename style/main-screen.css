@@ -18,11 +18,11 @@ body::before {
     height: 0;
     overflow: hidden;
 
-    content: url(../assets/space-bg.svg)
-             url(../assets/events-bg.svg)
-             url(../assets/riddle-bg.svg)
-             url(../assets/hypnosis-bg.svg)
-             url(../assets/shop-bg.svg);
+    content: url(../assets/space-bg.gif)
+             url(../assets/events-bg.gif)
+             url(../assets/riddle-bg.gif)
+             url(../assets/hypnosis-bg.gif)
+             url(../assets/shop-bg.gif);
 }
 
 .bg-red {
