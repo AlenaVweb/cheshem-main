@@ -17,12 +17,6 @@ body::before {
     width: 0;
     height: 0;
     overflow: hidden;
-
-    content: url(../assets/space-bg.gif)
-             url(../assets/events-bg.gif)
-             url(../assets/riddle-bg.gif)
-             url(../assets/hypnosis-bg.gif)
-             url(../assets/shop-bg.gif);
 }
 
 .bg-red {
