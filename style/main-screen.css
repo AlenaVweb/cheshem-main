@@ -1,0 +1,232 @@
+@import url(typography.css);
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: Lack;
+    font-size: 20px;
+    line-height: 1em;
+
+    color: hsl(0, 0%, 100%);
+}
+
+/* For loading purposes */
+body::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    content: url(../../assets/main-screen/space-bg.svg)
+             url(../../assets/main-screen/events-bg.svg)
+             url(../../assets/main-screen/riddle-bg.svg)
+             url(../../assets/main-screen/hypnosis-bg.svg)
+             url(../../assets/main-screen/shop-bg.svg);
+}
+
+.bg-red {
+    background-color: #f00;
+}
+
+.bg-blue {
+    background-color: #0047ff;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    height: 100vh;
+}
+
+#main-content {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    overflow: scroll;
+}
+
+/* Hide scrollbar  */
+#main-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+#main-content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* End of hiding scrollbar */
+
+.main-block {
+    height: 50%;
+
+    @media (orientation: landscape) {
+        width: 50vw;
+    }
+
+    @media (orientation: portrait) {
+        width: 100vw;
+    }
+}
+
+.block-link, .block-link:visited {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    color: inherit;
+    text-decoration: none;
+
+    position: relative;
+}
+
+.block-link, .block-link:hover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.block-link h2 {
+    position: absolute;
+
+    top: 16px;
+    left: 16px;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 20px;
+
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.block-link:hover h2 {
+    background-color: #656565;
+}
+
+#footer {
+    background-color: #0047ff;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding: 5px 10px;
+    text-transform: lowercase;
+
+    @media (orientation: portrait) {
+        font-size: 15px;
+        line-height: 1em;
+    }
+}
+
+#intro {
+    background-color: #0047ff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    line-height: 35px;
+}
+
+#intro p {
+    margin: 0;
+    padding: 0;
+}
+
+#intro h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+#space .block-link {
+    background-image: url(../../assets/main-screen/space-bg-dimmed.svg);
+}
+
+@keyframes space-link-hover {
+    to {
+        background-image: url(../../assets/main-screen/space-bg.svg);
+    }
+}
+
+#space .block-link:hover {
+    animation-name: space-link-hover;
+}
+
+#events .block-link {
+    background-image: url(../../assets/main-screen/events-bg-dimmed.svg);
+}
+
+@keyframes events-link-hover {
+    to {
+        background-image: url(../../assets/main-screen/events-bg.svg);
+    }
+}
+
+#events .block-link:hover {
+    animation-name: events-link-hover;
+}
+
+#hypnosis .block-link {
+    background-image: url(../../assets/main-screen/hypnosis-bg-dimmed.svg);
+    background-color: #fff;
+}
+
+@keyframes hypnosis-link-hover {
+    to {
+        background-image: url(../../assets/main-screen/hypnosis-bg.svg);
+    }
+}
+
+#hypnosis .block-link:hover {
+    animation-name: hypnosis-link-hover;
+}
+
+#riddle .block-link {
+    background-image: url(../../assets/main-screen/riddle-bg-dimmed.svg);
+}
+
+@keyframes riddle-link-hover {
+    to {
+        background-image: url(../../assets/main-screen/riddle-bg.svg);
+    }
+}
+
+#riddle .block-link:hover {
+    animation-name: riddle-link-hover;
+}
+
+#shop .block-link {
+    background-image: url(../../assets/main-screen/shop-bg-dimmed.svg);
+}
+
+@keyframes shop-link-hover {
+    to {
+        background-image: url(../../assets/main-screen/shop-bg.svg);
+    }
+}
+
+#shop .block-link:hover {
+    animation-name: shop-link-hover;
+}
